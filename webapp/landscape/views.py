@@ -4,6 +4,7 @@ landscape = Blueprint(
   'landscape', __name__,
   template_folder='/templates', static_folder='/static')
 
+
 @landscape.route('/')
 def index():
     return render_template('landscape/index.html')

@@ -2,9 +2,7 @@ import flask
 from werkzeug.contrib.fixers import ProxyFix
 from werkzeug.debug import DebuggedApplication
 
-import prometheus_flask_exporter
 import talisker.flask
-from webapp.extensions import sentry
 from webapp.handlers import add_headers, clear_trailing_slash
 from webapp.landscape.views import landscape
 
@@ -20,19 +18,6 @@ def create_app(testing=False):
         app.wsgi_app = DebuggedApplication(app.wsgi_app)
 
     app.url_map.strict_slashes = False
-
-    if not testing:
-        talisker.flask.register(app)
-
-        prometheus_flask_exporter.PrometheusMetrics(
-            app,
-            group_by_endpoint=True,
-            buckets=[0.25, 0.5, 0.75, 1, 2],
-            path=None
-        )
-
-        init_extensions(app)
-
     app.before_request(clear_trailing_slash)
     app.after_request(add_headers)
 
