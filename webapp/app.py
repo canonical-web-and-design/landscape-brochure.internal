@@ -14,10 +14,13 @@ def create_app(testing=False):
     app.testing = testing
 
     app.wsgi_app = ProxyFix(app.wsgi_app)
+    app.url_map.strict_slashes = False
+
     if app.debug:
+        talisker.flask.register(app)
         app.wsgi_app = DebuggedApplication(app.wsgi_app)
 
-    app.url_map.strict_slashes = False
+
     app.before_request(clear_trailing_slash)
     app.after_request(add_headers)
 
@@ -42,7 +45,3 @@ def init_handler(app):
 
 def init_blueprint(app):
     app.register_blueprint(landscape)
-
-
-def init_extensions(app):
-    sentry.init_app(app)
