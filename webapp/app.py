@@ -17,9 +17,10 @@ def create_app(testing=False):
     app.url_map.strict_slashes = False
 
     if app.debug:
-        talisker.flask.register(app)
         app.wsgi_app = DebuggedApplication(app.wsgi_app)
 
+    if not app.testing:
+        talisker.flask.register(app)
 
     app.before_request(clear_trailing_slash)
     app.after_request(add_headers)
