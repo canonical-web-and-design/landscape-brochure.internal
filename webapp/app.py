@@ -9,7 +9,8 @@ from webapp.landscape.views import landscape
 
 def create_app(testing=False):
     app = flask.Flask(
-        __name__, template_folder='../templates', static_folder='../static')
+        __name__, template_folder="../templates", static_folder="../static"
+    )
 
     app.testing = testing
 
@@ -39,9 +40,7 @@ def init_handler(app):
         passing through the error description.
         """
 
-        return flask.render_template(
-            '404.html', error=error.description
-        ), 404
+        return flask.render_template("404.html", error=error.description), 404
 
 
 def init_blueprint(app):
