@@ -1,0 +1,20 @@
+@charset "UTF-8";
+
+//settings
+@import 'settings_colors';
+
+// import vanilla-framework
+@import 'vanilla-framework/scss/build';
+
+// import local overrides
+@import 'patterns_navigation';
+@include landscape-navigation;
+
+// import local patterns
+@import 'patterns_hero';
+@include landscape-hero;
+
+.u-full-width {
+  max-width: none !important;
+  width: 100%;
+}
