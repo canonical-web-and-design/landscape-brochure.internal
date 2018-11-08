@@ -1,0 +1,8 @@
+@mixin landscape-navigation {
+  .p-navigation__link > a:hover {
+    //XXX KW20181108 it would eb better to use the mixin and override a variable
+    // the pattern doesn't have one to use
+    // Issue: https://github.com/vanilla-framework/vanilla-framework/issues/2046
+    background-color: #5E2750;
+  }
+}
