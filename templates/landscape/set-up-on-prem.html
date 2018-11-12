@@ -1,0 +1,53 @@
+{% extends "_layout.html" %}
+
+{% block title %}Landscape | Features{% endblock %}
+{% block description %}Landscape is the leading management tool to deploy, monitor and manage your Ubuntu servers.{% endblock %}
+
+{% block content %}
+<section class="p-strip">
+  <div class="row">
+    <h1>Set up your on premises Landscape server</h1>
+  </div>
+  <div class="row">
+    <div class="col-8">
+      <ol class="p-list-step">
+        <li class="p-list-step__item">
+          <h3 class="p-list-step__title">
+            <span class="p-list-step__bullet">1</span>
+            Add Landscape's repository
+          </h3>
+          <div class="p-list-step__content">
+            <div class="p-code-snippet">
+              <input class="p-code-snippet__input" value="sudo add-apt-repository ppa:landscape/17.03" readonly="readonly">
+            </div>
+          </div>
+        </li>
+
+        <li class="p-list-step__item">
+          <h3 class="p-list-step__title">
+            <span class="p-list-step__bullet">2</span>
+            Update package list
+          </h3>
+          <div class="p-list-step__content">
+            <div class="p-code-snippet">
+              <input class="p-code-snippet__input" value="sudo apt update" readonly="readonly">
+            </div>
+          </div>
+        </li>
+
+        <li class="p-list-step__item">
+          <h3 class="p-list-step__title">
+            <span class="p-list-step__bullet">3</span>
+            Install Landscape
+          </h3>
+          <div class="p-list-step__content">
+            <div class="p-code-snippet">
+              <input class="p-code-snippet__input" value="sudo apt install landscape-server-quickstart" readonly="readonly">
+            </div>
+          </div>
+        </li>
+      </ol>
+    </div>
+  </div>
+</section>
+{% endblock content %}
