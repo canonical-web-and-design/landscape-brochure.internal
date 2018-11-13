@@ -18,3 +18,9 @@
   max-width: none !important;
   width: 100%;
 }
+
+// Fix for full-width global nav
+.global-nav .global-nav__strip {
+  margin: 0 auto !important;
+  max-width: $grid-max-width;
+}
