@@ -24,3 +24,17 @@
   margin: 0 auto !important;
   max-width: $grid-max-width;
 }
+
+// XXX: KW 2018-11-15 - overrides to fix the display of the cookie policy
+// Will be fixed when either of the following issues are addressed:
+// - https://github.com/canonical-webteam/cookie-policy/issues/14
+// - https://github.com/canonical-webteam/cookie-policy/issues/15
+.p-notification--cookie-policy {
+  .p-notification__content {
+    max-width: 100%;
+  }
+
+  .p-notification__close {
+    top: $spv-inter--condensed-scaleable;
+  }
+}
