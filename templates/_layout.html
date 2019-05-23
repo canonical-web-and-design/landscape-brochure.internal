@@ -24,13 +24,6 @@
     <tal:provider replace="structure provider:script-viewlet-manager" />
   </head>
   <body>
-    <script src="/static/js/global-nav.js"></script>
-    <script>
-      canonicalGlobalNav.createNav({
-        maxWidth: '100%'
-      });
-    </script>
-
     <!-- Google Tag Manager -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K9KCMZ"
     height="0" width="0"
@@ -141,6 +134,14 @@
         </span>
       </nav>
     </footer>
+
+    <script src="/static/js/global-nav.js"></script>
+    <script>
+      canonicalGlobalNav.createNav({
+        maxWidth: '100%',
+        showLogins: false
+      });
+    </script>
 
     <script src="/static/js/cookie-policy.js"></script>
     <script>
