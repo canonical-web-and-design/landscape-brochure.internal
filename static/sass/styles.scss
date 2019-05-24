@@ -2,6 +2,7 @@
 
 //settings
 @import 'settings_colors';
+$breakpoint-navigation-threshold: 820px;
 
 // import vanilla-framework
 @import 'vanilla-framework/scss/build';

@@ -5,4 +5,11 @@
     // Issue: https://github.com/vanilla-framework/vanilla-framework/issues/2046
     background-color: #5E2750;
   }
+
+  .p-navigation__links--right {
+    @extend .p-navigation__links;
+
+    float: right;
+    padding-right: 1.5rem;
+  }
 }
