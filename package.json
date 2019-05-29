@@ -1,9 +1,8 @@
 {
   "scripts": {
     "lint-scss": "sass-lint static/**/*.scss --verbose --no-exit",
-    "build": "mkdir -p static/js && yarn run build-cookie-policy && yarn run build-global-nav && yarn run build-css",
-    "build-cookie-policy": "cp node_modules/@canonical/global-nav/dist/index.js static/js/global-nav.js",
-    "build-global-nav": "cp node_modules/@canonical/cookie-policy/build/js/cookie-policy.js static/js/cookie-policy.js",
+    "build": "mkdir -p static/js && yarn run build-js && yarn run build-css",
+    "build-js": "./build-js.sh",
     "build-css": "node-sass --include-path node_modules static/sass --output static/css && postcss --use autoprefixer --replace 'static/css/**/*.css' && postcss --use cssnano --dir static/minified 'static/css/**/*.css' && cp node_modules/@canonical/cookie-policy/build/css/cookie-policy.css static/css/cookie-policy.css",
     "serve": "./entrypoint 0.0.0.0:${PORT}",
     "watch": "watch -p 'static/sass/**/*.scss' -p 'static/js/**/*.js' -c 'yarn run build'",
