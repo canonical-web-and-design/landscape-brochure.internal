@@ -1,10 +1,6 @@
 #! /usr/bin/env bash
 
-## Copy the global navigations build asset into an accessible location in the
-## sites codebase
 cp node_modules/@canonical/global-nav/dist/index.js static/js/global-nav.js
 
-## Copy the cookie policy notification build asset into an accessible location
-## in the sites codebase
 cp node_modules/@canonical/cookie-policy/build/js/cookie-policy.js static/js/cookie-policy.js
 
