@@ -1,7 +1,7 @@
-Flask==1.0.3
+Flask==1.1.1
 gunicorn[gevent]
 raven[flask]==6.10.0
 statsd==3.3.0
-prometheus_client==0.6.0
+prometheus_client==0.7.1
 talisker==0.14.3
 black==18.6b4
