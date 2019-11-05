@@ -5,39 +5,37 @@
 
 {% block content %}
 <section class="p-strip--light is-deep">
-  <div class="row">
+  <div class="u-fixed-width">
     <h1 class="u-no-margin--bottom">Set up your on premises Landscape server</h1>
   </div>
 </section>
 <section class="p-strip is-bordered">
-  <div class="row">
-    <div class="col-12">
-      <ol class="p-stepped-list--detailed">
-        <li class="p-stepped-list__item">
-          <h3 class="p-stepped-list__title">
-            Add Landscape's repository
-          </h3>
-          <div class="p-stepped-list__content">
-            <div class="p-code-copyable">
-              <input class="p-code-copyable__input" value="sudo add-apt-repository --update ppa:landscape/19.01" readonly="readonly">
-              <button class="p-code-copyable__action">Copy to clipboard</button>
-            </div>
+  <div class="u-fixed-width">
+    <ol class="p-stepped-list--detailed">
+      <li class="p-stepped-list__item">
+        <h3 class="p-stepped-list__title">
+          Add Landscape's repository
+        </h3>
+        <div class="p-stepped-list__content">
+          <div class="p-code-copyable">
+            <input class="p-code-copyable__input" value="sudo add-apt-repository --update ppa:landscape/19.01" readonly="readonly">
+            <button class="p-code-copyable__action">Copy to clipboard</button>
           </div>
-        </li>
+        </div>
+      </li>
 
-        <li class="p-stepped-list__item">
-          <h3 class="p-stepped-list__title">
-              Install Landscape
-          </h3>
-          <div class="p-stepped-list__content">
-            <div class="p-code-copyable">
-              <input class="p-code-copyable__input" value="sudo apt install landscape-server-quickstart" readonly="readonly">
-              <button class="p-code-copyable__action">Copy to clipboard</button>
-            </div>
+      <li class="p-stepped-list__item">
+        <h3 class="p-stepped-list__title">
+            Install Landscape
+        </h3>
+        <div class="p-stepped-list__content">
+          <div class="p-code-copyable">
+            <input class="p-code-copyable__input" value="sudo apt install landscape-server-quickstart" readonly="readonly">
+            <button class="p-code-copyable__action">Copy to clipboard</button>
           </div>
-        </li>
-      </ol>
-    </div>
+        </div>
+      </li>
+    </ol>
   </div>
 </section>
 <script>
