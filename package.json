@@ -1,6 +1,5 @@
 {
   "scripts": {
-    "lint-scss": "sass-lint static/**/*.scss --verbose --no-exit",
     "build": "mkdir -p static/js && yarn run build-js && yarn run build-css",
     "build-js": "./scripts/build-js",
     "build-css": "node-sass --include-path node_modules static/sass --output static/css && postcss --use autoprefixer --replace 'static/css/**/*.css' && postcss --use cssnano --dir static/minified 'static/css/**/*.css' && cp node_modules/@canonical/cookie-policy/build/css/cookie-policy.css static/css/cookie-policy.css",
@@ -8,8 +7,10 @@
     "watch": "watch -p 'static/sass/**/*.scss' -p 'static/js/**/*.js' -c 'yarn run build'",
     "watch-scss": "watch -p 'static/sass/**/*.scss' -c 'yarn run build-css'",
     "clean": "rm -rf node_modules yarn-error.log css static/css *.log",
-    "test": "yarn run python-lint",
-    "python-lint": "flake8 webapp"
+    "test": "yarn run lint-scss && yarn run lint-python && yarn run test-python",
+    "test-python": "python3 -m unittest discover tests",
+    "lint-python": "flake8 webapp tests && black --check --line-length 79 webapp tests",
+    "lint-scss": "sass-lint static/**/*.scss --verbose --no-exit"
   },
   "lint-staged": {
     "**/*.py": [
