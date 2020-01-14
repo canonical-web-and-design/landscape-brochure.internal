@@ -27,13 +27,13 @@
     "@canonical/global-nav": "2.3.0",
     "autoprefixer": "9.7.3",
     "cssnano": "4.1.10",
-    "husky": "3.1.0",
+    "husky": "4.0.9",
     "lint-staged": "9.5.0",
     "node-sass": "4.13.0",
-    "postcss-cli": "6.1.3",
+    "postcss-cli": "7.1.0",
     "prettier": "1.19.1",
     "sass-lint": "1.13.1",
-    "vanilla-framework": "2.4.1",
+    "vanilla-framework": "2.5.0",
     "watch-cli": "0.2.3"
   }
 }
