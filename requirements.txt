@@ -5,3 +5,4 @@ statsd==3.3.0
 prometheus_client==0.7.1
 talisker==0.15.0
 black==18.6b4
+werkzeug==0.16.1

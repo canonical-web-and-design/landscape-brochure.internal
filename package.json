@@ -24,16 +24,16 @@
   },
   "dependencies": {
     "@canonical/cookie-policy": "2.0.2",
-    "@canonical/global-nav": "2.3.0",
-    "autoprefixer": "9.7.3",
+    "@canonical/global-nav": "2.4.0",
+    "autoprefixer": "9.7.4",
     "cssnano": "4.1.10",
-    "husky": "4.0.9",
-    "lint-staged": "9.5.0",
-    "node-sass": "4.13.0",
+    "husky": "4.2.3",
+    "lint-staged": "10.0.7",
+    "node-sass": "4.13.1",
     "postcss-cli": "7.1.0",
     "prettier": "1.19.1",
     "sass-lint": "1.13.1",
-    "vanilla-framework": "2.5.0",
+    "vanilla-framework": "2.7.0",
     "watch-cli": "0.2.3"
   }
 }
