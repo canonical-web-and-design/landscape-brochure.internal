@@ -22,9 +22,9 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@canonical/cookie-policy@2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@canonical/cookie-policy/-/cookie-policy-2.0.2.tgz#5bdc4743b8c6a8140189236f64a59577f1432e1d"
+"@canonical/cookie-policy@2.0.3":
+  version "2.0.3"
+  resolved "https://registry.yarnpkg.com/@canonical/cookie-policy/-/cookie-policy-2.0.3.tgz#69fd828df9526caa94b2347fbd1544f99d12b7ea"
 
 "@canonical/global-nav@2.4.0":
   version "2.4.0"
@@ -1875,9 +1875,9 @@ lines-and-columns@^1.1.6:
   version "1.1.6"
   resolved "https://registry.yarnpkg.com/lines-and-columns/-/lines-and-columns-1.1.6.tgz#1c00c743b433cd0a4e80758f7b64a57440d9ff00"
 
-lint-staged@10.0.7:
-  version "10.0.7"
-  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.0.7.tgz#d205f92d9359419a23bc6aa3b6f8546b1998da64"
+lint-staged@10.0.8:
+  version "10.0.8"
+  resolved "https://registry.yarnpkg.com/lint-staged/-/lint-staged-10.0.8.tgz#0f7849cdc336061f25f5d4fcbcfa385701ff4739"
   dependencies:
     chalk "^3.0.0"
     commander "^4.0.1"
@@ -3423,9 +3423,9 @@ vanilla-framework@2.5.0:
   version "2.5.0"
   resolved "https://registry.yarnpkg.com/vanilla-framework/-/vanilla-framework-2.5.0.tgz#b7f689d7583f4a215cde39b726091ffc2ec4f62a"
 
-vanilla-framework@2.7.0:
-  version "2.7.0"
-  resolved "https://registry.yarnpkg.com/vanilla-framework/-/vanilla-framework-2.7.0.tgz#3acb67982ff758b36c6e1fc9396ed08776cbf3b3"
+vanilla-framework@2.8.0:
+  version "2.8.0"
+  resolved "https://registry.yarnpkg.com/vanilla-framework/-/vanilla-framework-2.8.0.tgz#ec20ed3bf4fc2f1ce2d42075edb7a58c26f56982"
 
 vendors@^1.0.0:
   version "1.0.2"
