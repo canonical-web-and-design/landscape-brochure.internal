@@ -22,9 +22,10 @@
   dependencies:
     regenerator-runtime "^0.13.2"
 
-"@canonical/cookie-policy@2.0.3":
-  version "2.0.3"
-  resolved "https://registry.yarnpkg.com/@canonical/cookie-policy/-/cookie-policy-2.0.3.tgz#69fd828df9526caa94b2347fbd1544f99d12b7ea"
+"@canonical/cookie-policy@3.0.3":
+  version "3.0.3"
+  resolved "https://registry.yarnpkg.com/@canonical/cookie-policy/-/cookie-policy-3.0.3.tgz#77ff09de8cc91c3bd12d23bfeaaf23a0206995ad"
+  integrity sha512-cTNrBAO+w5Akrn32Arkp/YGgT9KXTUuCMAgE8ipABBtkEIQ2Z708mTkZ3FNgefxPvMuDuLCVvKhvHik31SEShg==
 
 "@canonical/global-nav@2.4.1":
   version "2.4.1"
