@@ -23,7 +23,7 @@
     ]
   },
   "dependencies": {
-    "@canonical/cookie-policy": "3.0.3",
+    "@canonical/cookie-policy": "3.0.4",
     "@canonical/global-nav": "2.4.1",
     "autoprefixer": "9.7.6",
     "cssnano": "4.1.10",
